@@ -34,6 +34,21 @@ body {
     color: var(--title-text-color);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 /* Header */
 .top {
 
@@ -43,13 +58,13 @@ body {
 
 .logo {
 
-font-family: 'Raleway';
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 
-letter-spacing: 0.03em;
-color: var(--accent-color);
+    color: var(--accent-color);
 }
 .logo-top {
     color: var(--webstudio-text-color);
@@ -63,6 +78,15 @@ color: var(--accent-color);
 
 /* навігація */
 /* !--------------------- */
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
 .top-nav {
     list-style: none;
 }
@@ -71,7 +95,7 @@ color: var(--accent-color);
     
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
@@ -81,7 +105,7 @@ color: var(--accent-color);
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
@@ -91,7 +115,7 @@ color: var(--accent-color);
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
@@ -113,20 +137,18 @@ color: var(--accent-color);
 .top-auth {
 
     font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
-
-
-    list-style: none;
-}
+        list-style: none;
+    }
 
 .auth-mail {
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     color:var(--title-text-color)
@@ -137,7 +159,7 @@ letter-spacing: 0.02em;
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     color:var(--title-text-color)
@@ -160,21 +182,23 @@ letter-spacing: 0.02em;
 
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
 
     color: var(--hero-text-color);
+
+    text-transform: uppercase;
 }
 
 .button {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
 
-font-weight: 700;
-font-size: 16px;
-line-height: 30px;
+    color: var(--hero-text-color);
+    background: var(--accent-background-color);
 
-color: var(--hero-text-color);
-background: var(--accent-background-color);
-
-cursor: pointer;
+    cursor: pointer;
 
 }
 
@@ -192,7 +216,7 @@ cursor: pointer;
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     
     color: var(--primary-text-color);
@@ -214,7 +238,7 @@ cursor: pointer;
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
@@ -238,7 +262,7 @@ cursor: pointer;
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
 
     color: var(--primary-text-color);
 
@@ -257,6 +281,11 @@ cursor: pointer;
 {
     color: var(--accent-color);
 }
+
+.bottom-ddress {
+    font-style: normal;
+}
+
 
 .bottom-list {
 
@@ -309,7 +338,7 @@ cursor: pointer;
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     
     letter-spacing: 0.03em;
     
@@ -337,7 +366,7 @@ cursor: pointer;
 .gallery-title {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
 
     letter-spacing: 0.06em;
 
